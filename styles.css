@@ -1,1 +1,87 @@
-* { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: Arial, sans-serif; background-color: #121212; color: white; } header { display: flex; justify-content: space-between; padding: 20px; background-color: #1a1a1a; } header .logo { font-size: 24px; font-weight: bold; color: #00bcd4; } nav ul { list-style-type: none; display: flex; gap: 15px; } nav ul li { display: inline; } nav ul li a { text-decoration: none; color: #f8f8f8; font-size: 16px; } nav ul li a:hover { color: #00bcd4; } section { padding: 50px 20px; } section#home { background-image: url('brickell-background.jpg'); background-size: cover; background-position: center; text-align: center; color: white; padding: 100px 20px; } section#home h1 { font-size: 50px; } section#about { background-color: #1c1c1c; text-align: center; } section#whitepaper { background-color: #262626; text-align: center; } section#social { background-color: #1a1a1a; text-align: center; } footer { background-color: #1c1c1c; padding: 20px; text-align: center; } footer p { font-size: 14px; color: #f8f8f8; } a { text-decoration: none; color: #00bcd4; } a:hover { color: #f8f8f8; }
+/* General Styles */
+body {
+font-family: Arial, sans-serif;
+background-color: #121212;
+color: #fff;
+margin: 0;
+padding: 0;
+}
+header {
+background-color: #222;
+padding: 40px 20px;
+text-align: center;
+}
+header h1 {
+font-size: 3em;
+color: #1e90ff; /* Neon Blue */
+text-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff, 0 0 30px #1e90ff;
+}
+header .tagline {
+font-size: 1.5em;
+color: #d3d3d3;
+}
+section {
+padding: 40px 20px;
+margin: 20px;
+background-color: #222;
+border-radius: 8px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+h2 {
+font-size: 2em;
+color: #fff;
+margin-bottom: 15px;
+text-align: center;
+}
+ul {
+list-style: none;
+padding: 0;
+}
+ul li {
+font-size: 1.2em;
+padding: 10px;
+border-bottom: 1px solid #444;
+}
+footer {
+background-color: #222;
+padding: 20px 0;
+text-align: center;
+margin-top: 40px;
+}
+#social-media a {
+color: #1e90ff;
+text-decoration: none;
+padding: 10px;
+}
+#social-media a:hover {
+color: #ff1493; /* Neon Pink */
+}
+footer p {
+color: #d3d3d3;
+margin-top: 15px;
+font-size: 1em;
+}
+#partnerships img {
+max-width: 200px;
+margin: 20px;
+opacity: 0.7;
+}
+#partnerships img:hover {
+opacity: 1;
+transition: opacity 0.3s ease;
+}
+/* Neon Glowing Effect */
+@keyframes glow {
+0% {
+text-shadow: 0 0 5px #1e90ff, 0 0 10px #1e90ff, 0 0 15px #1e90ff, 0 0 20px #1e90ff;
+}
+50% {
+text-shadow: 0 0 10px #ff1493, 0 0 15px #ff1493, 0 0 25px #ff1493, 0 0 35px #ff1493;
+}
+100% {
+text-shadow: 0 0 5px #1e90ff, 0 0 10px #1e90ff, 0 0 15px #1e90ff, 0 0 20px #1e90ff;
+}
+}
+h2, h1 {
+animation: glow 1.5s infinite alternate;
+}
